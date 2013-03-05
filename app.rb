@@ -1,6 +1,4 @@
 require 'sinatra'
-require 'coffee-script'
-require 'sass'
 require 'boilerpipe'
 require 'json'
 
