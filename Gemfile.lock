@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    boilerpipe (0.0.4)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -9,6 +10,7 @@ GEM
       multi_json (~> 1.0)
     haml (4.0.0)
       tilt
+    json (1.7.7)
     multi_json (1.6.1)
     rack (1.5.2)
     rack-protection (1.4.0)
@@ -24,7 +26,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  boilerpipe
   coffee-script
   haml
+  json
   sass
   sinatra
