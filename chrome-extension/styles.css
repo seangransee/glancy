@@ -1,7 +1,18 @@
 .size {
-	background-color: #ff6600;
 	height: 2px;
 	position: absolute;
 	margin-top: 15px;
   margin-left: 36px;
+}
+
+.full {
+  background-color: #ff6600;
+}
+
+.muted {
+  background-color: #FFC8A3;
+}
+
+.hidden {
+  display: none;
 }
