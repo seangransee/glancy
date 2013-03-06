@@ -1,0 +1,11 @@
+{
+  "name": "Article Length Glance",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "Lets you glance at the lengths of every article on the page. Currently supports Hacker News.",
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "main.js" ],
+    "css": ["styles.css"],
+    "matches": [ "*://news.ycombinator.com/*"]
+  } ]
+}
