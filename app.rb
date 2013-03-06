@@ -47,7 +47,7 @@ def getSize(url)
 end
 
 get '/' do
-  headers['Access-Control-Allow-Origin'] = ['http://news.ycombinator.com']
+  headers['Access-Control-Allow-Origin'] = '*'
   url = params['url']
   if url
     getSize(url)
