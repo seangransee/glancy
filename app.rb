@@ -10,7 +10,7 @@ port = ENV['ALG_MONGOPORT']
 user = ENV['ALG_MONGOUSER']
 pass = ENV['ALG_MONGOPASS']
 
-client = MongoClient.new(server, port)
+client = Mongo::Connection.new(server, port)
 db = client['article-length-glance']
 db.authenticate(user, pass)
 $coll = db['sizes']
