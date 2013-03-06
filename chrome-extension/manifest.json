@@ -15,7 +15,7 @@
     "matches": [ "*://news.ycombinator.com/*"]
   } ],
   "page_action": {
-    "default_title": "Toggle Glancer color",
+    "default_title": "Toggle Glancy color",
     "default_icon": "icons/default_19.gif"
   },
   "permissions": [
