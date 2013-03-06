@@ -3,6 +3,8 @@ GEM
   specs:
     boilerpipe (0.0.4)
     bson (1.6.4)
+    bson_ext (1.6.4)
+      bson (~> 1.6.4)
     json (1.7.7)
     mongo (1.6.4)
       bson (~> 1.6.4)
@@ -20,6 +22,7 @@ PLATFORMS
 
 DEPENDENCIES
   boilerpipe
+  bson_ext
   json
   mongo
   sinatra
