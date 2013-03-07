@@ -1,18 +1,36 @@
-.size {
+.hn.size {
 	height: 2px;
 	position: absolute;
 	margin-top: 15px;
   margin-left: 36px;
 }
 
-.full {
-  background-color: #ff6600;
+  .hn.size.full {
+    background-color: #ff6600;
+  }
+
+  .hn.size.muted {
+    background-color: #FFC8A3;
+  }
+
+  .hn.size.hidden {
+    display: none;
+  }
+
+.reddit.size {
+  height: 2px;
+  margin-top: 15px;
+  margin-left: 36px;
 }
 
-.muted {
-  background-color: #FFC8A3;
-}
+  .reddit.size.full {
+    background-color: #ff6600;
+  }
 
-.hidden {
-  display: none;
-}
+  .reddit.size.muted {
+    background-color: #cee3f8;
+  }
+
+  .reddit.size.hidden {
+    display: none;
+  }

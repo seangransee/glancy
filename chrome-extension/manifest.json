@@ -12,7 +12,10 @@
   "content_scripts": [ {
     "js": [ "jquery.min.js", "main.js" ],
     "css": ["styles.css"],
-    "matches": [ "*://news.ycombinator.com/*"]
+    "matches": [
+      "*://news.ycombinator.com/*",
+      "*://www.reddit.com/*"
+    ]
   } ],
   "page_action": {
     "default_title": "Toggle Glancy color",
@@ -20,7 +23,8 @@
   },
   "permissions": [
     "tabs",
-    "*://news.ycombinator.com/*"
+    "*://news.ycombinator.com/*",
+    "*://reddit.com/*"
   ],
   "icons": {
     "16": "icons/default_16.gif",

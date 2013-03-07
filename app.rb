@@ -15,6 +15,9 @@ db = client['article-length-glance']
 db.authenticate(user, pass)
 $coll = db['sizes']
 
+excluded = open('excluded.txt').map { |line| line.split(' ')[0]}
+p excluded
+
 configure do
   enable :cross_origin
 end
@@ -49,9 +52,9 @@ end
 get '/' do
   headers['Access-Control-Allow-Origin'] = '*'
   url = params['url']
-  if url
+  if url and not excluded.include?(url.split('/')[2])
     getSize(url)
   else
-    "No URL passed in"
+    {:error => "Empty or invalid URL", :size => nil}.to_json
   end
 end
