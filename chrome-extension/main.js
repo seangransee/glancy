@@ -25,6 +25,12 @@ function placeBar(link, sizeDiv, site) {
     case 'reddit':
       $(link).parent().parent().parent().before(sizeDiv);
       break;
+    case 'wp':
+      $(link).parent().before(sizeDiv);
+      break;
+    case 'nytimes':
+      $(link).parent().before(sizeDiv);
+      break;
   }
 }
 
@@ -49,18 +55,35 @@ switch (window.location.origin)
 {
   case 'http://news.ycombinator.com':
     var maxWidth = $('table').first().find('tbody').first().width() - 36;
-    var isPageOfLinks = $('.title a').length > 1;
     var links = $('.title a');
+    var isPageOfLinks = links.length > 1;
     var scale = 5;
     var site = 'hn';
     break;
 
   case 'http://www.reddit.com':
     var maxWidth = $(window).width() - 70;
-    var isPageOfLinks = true;
     var links = $('.linklisting a.title');
+    var isPageOfLinks = links.length > 1;
     var scale = 5;
     var site = 'reddit';
+    break;
+
+  case 'http://www.washingtonpost.com':
+    var maxWidth = $(window).width() - 70;
+    var links = $('h2.headline a, h2.no-left a');
+    var isPageOfLinks = links.length > 1;
+    var scale = 5;
+    var site = 'wp';
+    break;
+
+  case 'http://www.nytimes.com':
+    var maxWidth = $(window).width() - 70;
+    var links = $('.story h2 a, .story h3 a');
+    var isPageOfLinks = links.length > 1;
+    var scale = 5;
+    var site = 'nytimes';
+    break;
 }
 
 generateBars(maxWidth, isPageOfLinks, links, scale, site);

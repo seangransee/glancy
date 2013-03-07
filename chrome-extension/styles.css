@@ -34,3 +34,19 @@
   .reddit.size.hidden {
     display: none;
   }
+
+.wp.size {
+  height: 2px;
+}
+
+  .wp.size.full {
+    background-color: #222222;
+  }
+
+  .wp.size.muted {
+    background-color: #cccccc;
+  }
+
+  .wp.size.hidden {
+    display: none;
+  }
