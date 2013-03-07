@@ -27,8 +27,8 @@
     "*://reddit.com/*"
   ],
   "icons": {
-    "16": "icons/default_16.gif",
-    "48": "icons/default_48.gif",
-    "128": "icons/default_128.gif"
+    "16": "icons/logo_16.gif",
+    "48": "icons/logo_48.gif",
+    "128": "icons/logo_128.gif"
   }
 }

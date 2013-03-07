@@ -4,9 +4,9 @@ rm icons/*
 
 DEFAULT_COLOR="#AAAAAA"
 
-./drawIcons.sh 16 $DEFAULT_COLOR default
-./drawIcons.sh 48 $DEFAULT_COLOR default
-./drawIcons.sh 128 $DEFAULT_COLOR default
+./drawLogo.sh 16
+./drawLogo.sh 48
+./drawLogo.sh 128
 
 for SIZE in 19 38
 do
