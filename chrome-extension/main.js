@@ -35,11 +35,15 @@ switch (window.location.origin)
     break;
 
   case 'http://www.reddit.com':
+    var maxWidth = $(window).width() - 70;
     $('.linklisting a.title').each(function() {
       var url = $(this).prop('href');
       var link = this;
       getSize(url, function(size) {
         barSize = size / 5;
+        if(barSize > maxWidth) {
+          barSize = maxWidth;
+        }
         var sizeDiv = createSizeDiv('reddit', color, barSize);
         $(link).parent().parent().parent().before(sizeDiv);
       });
