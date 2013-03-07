@@ -22,8 +22,8 @@ function changeIconColor(tab, color) {
   chrome.pageAction.setIcon({
     tabId: tab.id,
     path: {
-      19: "icons/"+site+"_"+color+"_19.gif",
-      38: "icons/"+site+"_"+color+"_38.gif"
+      19: "icons/"+site+"_"+color+"_19.png",
+      38: "icons/"+site+"_"+color+"_38.png"
     }
   });
 }
