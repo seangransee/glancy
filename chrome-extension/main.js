@@ -1,5 +1,3 @@
-console.log('running glancy');
-
 var api = "http://article-length-glance.herokuapp.com/";
 
 function getSize(url, callback) {
@@ -15,7 +13,6 @@ if(!color) {
 }
 
 function createSizeDiv(site, color, size) {
-  console.log('created size div');
   return $(document.createElement('div')).addClass(site).addClass('size').addClass(color).width(size);
 }
 
@@ -43,7 +40,6 @@ switch (window.location.origin)
       var link = this;
       getSize(url, function(size) {
         barSize = size / 5;
-        console.log(barSize);
         var sizeDiv = createSizeDiv('reddit', color, barSize);
         $(link).parent().parent().parent().before(sizeDiv);
       });

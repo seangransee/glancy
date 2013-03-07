@@ -15,6 +15,10 @@ do
   ./drawIcons.sh $SIZE "#DDDDDD" hn_hidden
   ./drawIcons.sh $SIZE "#ff6600" hn_full
   ./drawIcons.sh $SIZE "#ffc8a3" hn_muted
+
+  ./drawIcons.sh $SIZE "#DDDDDD" reddit_hidden
+  ./drawIcons.sh $SIZE "#5f99cf" reddit_full
+  ./drawIcons.sh $SIZE "#cee3f8" reddit_muted
 done
 
 zip -r extension.zip background.js \

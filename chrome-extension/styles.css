@@ -18,13 +18,13 @@
   }
 
 .reddit.size {
-  height: 2px;
+  height: 4px;
   margin-top: 15px;
   margin-left: 36px;
 }
 
   .reddit.size.full {
-    background-color: #ff6600;
+    background-color: #5f99cf;
   }
 
   .reddit.size.muted {

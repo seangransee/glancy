@@ -1,5 +1,7 @@
+allowedSites = ['news.ycombinator.com', 'www.reddit.com'];
+
 function checkForValidUrl(tabId, changeInfo, tab) {
-  if (tab.url.indexOf('news.ycombinator.com') > -1) {
+  if (allowedSites.indexOf(tab.url.split('/')[2]) > -1) {
     chrome.pageAction.show(tabId);
   }
 }
@@ -11,6 +13,10 @@ function changeIconColor(tab, color) {
   {
     case 'news.ycombinator.com':
       var site = "hn";
+      break;
+    case 'www.reddit.com':
+      var site = "reddit";
+      break;
   }
 
   chrome.pageAction.setIcon({
