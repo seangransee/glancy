@@ -66,3 +66,19 @@
   .nytimes.size.hidden {
     display: none;
   }
+
+.huffpo.size {
+  height: 2px;
+}
+
+  .huffpo.size.full {
+    background-color: #2d7061;
+  }
+
+  .huffpo.size.muted {
+    background-color: #B4D4CD;
+  }
+
+  .huffpo.size.hidden {
+    display: none;
+  }

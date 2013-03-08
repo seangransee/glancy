@@ -1,6 +1,6 @@
 {
   "name": "Glancy",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "manifest_version": 2,
   "description": "Lets you glance at the lengths of every article on the page. Currently supports Hacker News, Reddit, The New York Times, and more.",
   "background": {
@@ -16,7 +16,8 @@
       "*://news.ycombinator.com/*",
       "*://www.reddit.com/*",
       "*://www.washingtonpost.com/*",
-      "*://www.nytimes.com/*"
+      "*://www.nytimes.com/*",
+      "*://www.huffingtonpost.com/*"
     ]
   } ],
   "page_action": {
@@ -31,7 +32,8 @@
     "*://news.ycombinator.com/*",
     "*://www.reddit.com/*",
     "*://www.washingtonpost.com/*",
-    "*://www.nytimes.com/*"
+    "*://www.nytimes.com/*",
+    "*://www.huffingtonpost.com/*"
   ],
   "icons": {
     "16": "icons/logo_16.png",

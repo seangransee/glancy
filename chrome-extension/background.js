@@ -1,4 +1,4 @@
-allowedSites = ['news.ycombinator.com', 'www.reddit.com', 'www.washingtonpost.com', 'www.nytimes.com'];
+allowedSites = ['news.ycombinator.com', 'www.reddit.com', 'www.washingtonpost.com', 'www.nytimes.com', 'www.huffingtonpost.com'];
 
 function checkForValidUrl(tabId, changeInfo, tab) {
   if (allowedSites.indexOf(tab.url.split('/')[2]) > -1) {
@@ -22,6 +22,9 @@ function changeIconColor(tab, color) {
       break;
     case 'www.nytimes.com':
       var site = "nytimes";
+      break;
+    case 'www.huffingtonpost.com':
+      var site = "huffpo";
       break;
   }
 

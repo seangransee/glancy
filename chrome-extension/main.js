@@ -31,6 +31,9 @@ function placeBar(link, sizeDiv, site) {
     case 'nytimes':
       $(link).parent().before(sizeDiv);
       break;
+    case 'huffpo':
+      $(link).parent().before(sizeDiv);
+      break;
   }
 }
 
@@ -84,6 +87,13 @@ switch (window.location.origin)
     var scale = 5;
     var site = 'nytimes';
     break;
+
+  case 'http://www.huffingtonpost.com':
+    var maxWidth = $(window).width() - 70;
+    var links = $('h1 a, h3 a');
+    var isPageOfLinks = links.length > 1;
+    var scale = 7;
+    var site = 'huffpo';
 }
 
 generateBars(maxWidth, isPageOfLinks, links, scale, site);
