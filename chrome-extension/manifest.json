@@ -1,8 +1,8 @@
 {
   "name": "Glancy",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "manifest_version": 2,
-  "description": "Lets you glance at the lengths of every article on the page. Currently supports Hacker News, Reddit, and Washington Post",
+  "description": "Lets you glance at the lengths of every article on the page. Currently supports Hacker News, Reddit, The New York Times, and The Washington Post",
   "background": {
     "scripts": [
       "jquery.min.js",
