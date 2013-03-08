@@ -57,6 +57,8 @@ function generateBars(maxWidth, isPageOfLinks, links, scale, site) {
   }
 }
 
+console.log(window.location.origin);
+
 switch (window.location.origin)
 {
   case 'http://news.ycombinator.com':
@@ -97,6 +99,7 @@ switch (window.location.origin)
     var isPageOfLinks = links.length > 1;
     var scale = 7;
     var site = 'huffpo';
+    break;
 
   case 'http://www.cnn.com':
     var maxWidth = $(window).width();
@@ -104,6 +107,7 @@ switch (window.location.origin)
     var isPageOfLinks = links.length > 1;
     var scale = 15;
     var site = 'cnn';
+    break;
 }
 
 generateBars(maxWidth, isPageOfLinks, links, scale, site);
