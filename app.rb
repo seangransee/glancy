@@ -2,6 +2,7 @@ require 'sinatra'
 require 'boilerpipe'
 require 'json'
 require 'mongo'
+require 'haml'
 
 include Mongo
 
@@ -16,7 +17,6 @@ db.authenticate(user, pass)
 $coll = db['sizes']
 
 excluded = open('excluded.txt').map { |line| line.split(' ')[0]}
-p excluded
 
 configure do
   enable :cross_origin
@@ -50,13 +50,7 @@ def getSize(url)
 end
 
 get '/' do
-  headers['Access-Control-Allow-Origin'] = '*'
-  url = params['url']
-  if url and not excluded.include?(url.split('/')[2])
-    getSize(url)
-  else
-    {:error => "Empty or invalid URL", :size => nil}.to_json
-  end
+  haml :index
 end
 
 get '/size' do

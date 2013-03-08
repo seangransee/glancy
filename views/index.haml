@@ -1,8 +1,52 @@
 <!DOCTYPE html>
 %html
   %head
-    %title Heroku Sinatra Boilerplate
+    %link{:rel => 'shortcut icon', :href => '/img/favicon.png'}
+    %link{:rel => 'stylesheet', :href => '/css/reset.min.css'}
+    %link{:rel => 'stylesheet', :href => '/css/styles.css'}
+    %link{:rel => 'chrome-webstore-item', :href => "https://chrome.google.com/webstore/detail/dgijmiilhfkmmbpfnfjbneaccnlokllo"}
+    %title Glancy - Article lengths at a glance
 
   %body
 
-    Your application works!
+    .page
+      .title
+        %img{:src => '/img/logo.png'}
+        .text
+          %h1 Glancy
+          %h2 Article lengths at a glance
+
+      .content
+        #slides
+          .slides_container
+            %div
+              %img{:src => '/img/hn_screenshot.png'}
+            %div
+              %img{:src => '/img/reddit_screenshot.png'}
+        .text
+          %p Have a couple minutes free? You might want to read something short. Got some time to kill? Maybe you're in the mood for something longer.
+          %p If you frequently browse link aggregation and news sites, this is the plugin for you.
+          %p <a href="https://chrome.google.com/webstore/detail/glancy/dgijmiilhfkmmbpfnfjbneaccnlokllo/">Glancy</a> lets you see how long each article is when you glance at a page on any of these supported sites:
+          %ul
+            %li
+              %a{:href => "http://news.ycombinator.com"} Hacker News
+            %li
+              %a{:href => "http://www.reddit.com"} Reddit
+            %li
+              %a{:href => "http://www.nytimes.com"} The New York Times
+            %li
+              %a{:href => "http://www.washingtonpost.com"} The Washington Post
+          %h2
+            %a.install{:href => "https://chrome.google.com/webstore/detail/glancy/dgijmiilhfkmmbpfnfjbneaccnlokllo/", :onclick => "chrome.webstore.install()"} Install for Chrome
+
+      .getit
+        %a{:href => "https://chrome.google.com/webstore/detail/glancy/dgijmiilhfkmmbpfnfjbneaccnlokllo/"}
+          %img{:src => '/img/chrome.png'}
+
+      .footer
+        %p Coded with love by <a href="http://seangransee.com/">Sean Gransee</a>.
+        %p Source code available on <a href="https://github.com/seangransee/glancy">Github</a>.
+
+    %script{:src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'}
+    %script{:src => '/js/slides.min.jquery.js'}
+    %script{:src => '/js/glancy.js'}

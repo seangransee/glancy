@@ -20,4 +20,5 @@ doc/
 .sass-cache
 *.zip
 *.gif
+*.png
 /chrome-extension/icons

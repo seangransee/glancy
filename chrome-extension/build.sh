@@ -5,9 +5,12 @@ rm icons/*
 DEFAULT_COLOR="#AAAAAA"
 HIDDEN_COLOR="#DDDDDD"
 
-./drawLogo.sh 16
-./drawLogo.sh 48
-./drawLogo.sh 128
+./drawLogo.sh 16 ../public/img/favicon.png
+./drawLogo.sh 100 ../public/img/logo.png
+
+./drawLogo.sh 16 icons/logo_16.png
+./drawLogo.sh 48 icons/logo_48.png
+./drawLogo.sh 128 icons/logo_128.png
 
 for SIZE in 19 38
 do

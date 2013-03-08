@@ -1,4 +1,4 @@
-var api = "http://article-length-glance.herokuapp.com/";
+var api = "http://article-length-glance.herokuapp.com/size";
 
 function getSize(url, callback) {
   $.get(api, {"url": url}, function(d) {

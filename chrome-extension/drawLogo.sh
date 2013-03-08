@@ -1,13 +1,13 @@
 convert -size 38x38 xc:transparent \
-          -fill '#ff6600' \
+          -fill '#E83725' \
           -draw 'rectangle 0,0, 24,3' \
-          -fill "#5f99cf" \
+          -fill "#FF6529" \
           -draw 'rectangle 0,8, 37,11' \
-          -fill '#ff6600' \
+          -fill '#FF3678' \
           -draw 'rectangle 0,16, 11,19' \
-          -fill "#5f99cf" \
+          -fill "#E826E3" \
           -draw 'rectangle 0,24, 27,27' \
-          -fill '#ff6600' \
+          -fill '#BA32FF' \
           -draw 'rectangle 0,32, 19,35' \
           -scale $1x$1 \
-          icons/logo_$1.png
+          $2
