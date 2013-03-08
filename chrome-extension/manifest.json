@@ -15,7 +15,8 @@
     "matches": [
       "*://news.ycombinator.com/*",
       "*://www.reddit.com/*",
-      "*://www.washingtonpost.com/*"
+      "*://www.washingtonpost.com/*",
+      "*://www.nytimes.com/*"
     ]
   } ],
   "page_action": {
@@ -26,7 +27,8 @@
     "tabs",
     "*://news.ycombinator.com/*",
     "*://www.reddit.com/*",
-    "*://www.washingtonpost.com/*"
+    "*://www.washingtonpost.com/*",
+    "*://www.nytimes.com/*"
   ],
   "icons": {
     "16": "icons/logo_16.png",

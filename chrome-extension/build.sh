@@ -24,6 +24,10 @@ do
   ./drawIcons.sh $SIZE $HIDDEN_COLOR wp_hidden
   ./drawIcons.sh $SIZE "#222222" wp_full
   ./drawIcons.sh $SIZE "#CCCCCC" wp_muted
+
+  ./drawIcons.sh $SIZE $HIDDEN_COLOR nytimes_hidden
+  ./drawIcons.sh $SIZE "#004276" nytimes_full
+  ./drawIcons.sh $SIZE "#C9E0F2" nytimes_muted
 done
 
 zip -r extension.zip background.js \

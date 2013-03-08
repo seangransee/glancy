@@ -79,7 +79,7 @@ switch (window.location.origin)
 
   case 'http://www.nytimes.com':
     var maxWidth = $(window).width() - 70;
-    var links = $('.story h2 a, .story h3 a');
+    var links = $('.story h2 a, .story h3 a, .story h5 a');
     var isPageOfLinks = links.length > 1;
     var scale = 5;
     var site = 'nytimes';

@@ -50,3 +50,19 @@
   .wp.size.hidden {
     display: none;
   }
+
+.nytimes.size {
+  height: 2px;
+}
+
+  .nytimes.size.full {
+    background-color: #004276;
+  }
+
+  .nytimes.size.muted {
+    background-color: #C9E0F2;
+  }
+
+  .nytimes.size.hidden {
+    display: none;
+  }

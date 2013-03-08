@@ -58,3 +58,13 @@ get '/' do
     {:error => "Empty or invalid URL", :size => nil}.to_json
   end
 end
+
+get '/size' do
+  headers['Access-Control-Allow-Origin'] = '*'
+  url = params['url']
+  if url and not excluded.include?(url.split('/')[2])
+    getSize(url)
+  else
+    {:error => "Empty or invalid URL", :size => nil}.to_json
+  end
+end
