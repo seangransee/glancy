@@ -21,7 +21,10 @@
   } ],
   "page_action": {
     "default_title": "Toggle Glancy color",
-    "default_icon": "icons/default_19.png"
+    "default_icon": {
+      "19": "icons/logo_19.png",
+      "38": "icons/logo_38.png"
+    }
   },
   "permissions": [
     "tabs",
