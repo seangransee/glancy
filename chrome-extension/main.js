@@ -73,7 +73,7 @@ switch (window.location.origin)
     break;
 
   case 'http://www.washingtonpost.com':
-    var maxWidth = $(window).width() - 70;
+    var maxWidth = $(window).width();
     var links = $('h2.headline a, h2.no-left a');
     var isPageOfLinks = links.length > 1;
     var scale = 5;
@@ -81,7 +81,7 @@ switch (window.location.origin)
     break;
 
   case 'http://www.nytimes.com':
-    var maxWidth = $(window).width() - 70;
+    var maxWidth = $(window).width();
     var links = $('.story h2 a, .story h3 a, .story h5 a');
     var isPageOfLinks = links.length > 1;
     var scale = 5;
@@ -89,8 +89,8 @@ switch (window.location.origin)
     break;
 
   case 'http://www.huffingtonpost.com':
-    var maxWidth = $(window).width() - 70;
-    var links = $('h1 a, h3 a');
+    var maxWidth = $(window).width();
+    var links = $('h1 a, h3 a, .entry h4 a');
     var isPageOfLinks = links.length > 1;
     var scale = 7;
     var site = 'huffpo';
