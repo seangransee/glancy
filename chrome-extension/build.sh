@@ -36,6 +36,10 @@ do
   ./drawIcons.sh $SIZE $HIDDEN_COLOR huffpo_hidden
   ./drawIcons.sh $SIZE "#2d7061" huffpo_full
   ./drawIcons.sh $SIZE "#B4D4CD" huffpo_muted
+
+  ./drawIcons.sh $SIZE $HIDDEN_COLOR cnn_hidden
+  ./drawIcons.sh $SIZE "#ca0002" cnn_full
+  ./drawIcons.sh $SIZE "#FFBFC1" cnn_muted
 done
 
 zip -r extension.zip background.js \

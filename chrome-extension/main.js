@@ -34,6 +34,9 @@ function placeBar(link, sizeDiv, site) {
     case 'huffpo':
       $(link).parent().before(sizeDiv);
       break;
+    case 'cnn':
+      $(link).parent().before(sizeDiv);
+      break;
   }
 }
 
@@ -65,7 +68,7 @@ switch (window.location.origin)
     break;
 
   case 'http://www.reddit.com':
-    var maxWidth = $(window).width() - 70;
+    var maxWidth = $(window).width() - 68;
     var links = $('.linklisting a.title');
     var isPageOfLinks = links.length > 1;
     var scale = 5;
@@ -94,6 +97,13 @@ switch (window.location.origin)
     var isPageOfLinks = links.length > 1;
     var scale = 7;
     var site = 'huffpo';
+
+  case 'http://www.cnn.com':
+    var maxWidth = $(window).width();
+    var links = $('.cnn_bulletbin li a:nth-child(2), .cnn_bulletbin li a:first-child, h2 a');
+    var isPageOfLinks = links.length > 1;
+    var scale = 15;
+    var site = 'cnn';
 }
 
 generateBars(maxWidth, isPageOfLinks, links, scale, site);

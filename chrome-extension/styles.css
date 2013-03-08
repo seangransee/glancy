@@ -1,7 +1,7 @@
 .hn.size {
 	height: 2px;
 	position: absolute;
-	margin-top: 15px;
+	margin-bottom: -2px;
   margin-left: 36px;
 }
 
@@ -20,7 +20,8 @@
 .reddit.size {
   height: 4px;
   margin-top: 15px;
-  margin-left: 36px;
+  margin-bottom: -2px;
+  margin-left: 68px;
 }
 
   .reddit.size.full {
@@ -80,5 +81,22 @@
   }
 
   .huffpo.size.hidden {
+    display: none;
+  }
+
+.cnn.size {
+  height: 2px;
+  margin-bottom: -2px;
+}
+
+  .cnn.size.full {
+    background-color: #ca0002;
+  }
+
+  .cnn.size.muted {
+    background-color: #FFBFC1;
+  }
+
+  .cnn.size.hidden {
     display: none;
   }
