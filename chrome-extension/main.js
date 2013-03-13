@@ -57,11 +57,9 @@ function generateBars(maxWidth, isPageOfLinks, links, scale, site) {
   }
 }
 
-console.log(window.location.origin);
-
-switch (window.location.origin)
+switch (window.location.origin.split('/')[2])
 {
-  case 'http://news.ycombinator.com':
+  case 'news.ycombinator.com':
     var maxWidth = $('table').first().find('tbody').first().width() - 36;
     var links = $('.title a');
     var isPageOfLinks = links.length > 1;
@@ -69,7 +67,7 @@ switch (window.location.origin)
     var site = 'hn';
     break;
 
-  case 'http://www.reddit.com':
+  case 'www.reddit.com':
     var maxWidth = $(window).width() - 68;
     var links = $('.linklisting a.title');
     var isPageOfLinks = links.length > 1;
@@ -77,7 +75,7 @@ switch (window.location.origin)
     var site = 'reddit';
     break;
 
-  case 'http://www.washingtonpost.com':
+  case 'www.washingtonpost.com':
     var maxWidth = $(window).width();
     var links = $('h2.headline a, h2.no-left a');
     var isPageOfLinks = links.length > 1;
@@ -85,7 +83,7 @@ switch (window.location.origin)
     var site = 'wp';
     break;
 
-  case 'http://www.nytimes.com':
+  case 'www.nytimes.com':
     var maxWidth = $(window).width();
     var links = $('.story h2 a, .story h3 a, .story h5 a');
     var isPageOfLinks = links.length > 1;
@@ -93,7 +91,7 @@ switch (window.location.origin)
     var site = 'nytimes';
     break;
 
-  case 'http://www.huffingtonpost.com':
+  case 'www.huffingtonpost.com':
     var maxWidth = $(window).width();
     var links = $('h1 a, h3 a, .entry h4 a');
     var isPageOfLinks = links.length > 1;
@@ -101,7 +99,7 @@ switch (window.location.origin)
     var site = 'huffpo';
     break;
 
-  case 'http://www.cnn.com':
+  case 'www.cnn.com':
     var maxWidth = $(window).width();
     var links = $('.cnn_bulletbin li a:nth-child(2), .cnn_bulletbin li a:first-child, h2 a');
     var isPageOfLinks = links.length > 1;
